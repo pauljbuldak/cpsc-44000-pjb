@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <!--
+        Author: Paul Buldak
+        Class: Software Engineering
+        Project: Dice Roller
+        Description: This application rolls dice utilizing the onload and 
+            autofocus features
+    -->
+    <head>
+        <title>Dice Roller</title>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width,
+        initialscale=1'>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" 
+        rel="stylesheet">
+        <link rel='stylesheet' href='dice-roller-pb.css'>
+        <script src="dice-roller-pb.js"></script>
+    </head>
+    <body onload="RollDice()">
+        <h1>Dice Roller</h1>
+        <hr>
+        <h2>This dice roller game is a simplified version of Yahtzee.</h2>
+        <h2>Instructions: Roll the dice as many times as needed to try to match all 5 dice.</h2>
+
+        <button id="btnAllDice" class="button" type="button" onclick="RollDice()" 
+        autofocus>Roll All Dice</button>
+        <button id="btnDieOne" class="button" type="button" 
+        onclick="RollDieOne()">Roll Die 1</button>
+        <button id="btnDieTwo" class="button" type="button" 
+        onclick="RollDieTwo()">Roll Die 2</button>
+        <button id="btnDieThree" class="button" type="button" 
+        onclick="RollDieThree()">Roll Die 3</button>
+        <button id="btnDieFour" class="button" type="button" 
+        onclick="RollDieFour()">Roll Die 4</button>
+        <button id="btnDieFive" class="button" type="button" 
+        onclick="RollDieFive()">Roll Die 5</button><br>
+
+        Die 1: <input id="dieOne" type="text" value="" size="5" disabled><br>
+        Die 2: <input id="dieTwo" type="text" value="" size="5" disabled><br>
+        Die 3: <input id="dieThree" type="text" value="" size="5" disabled><br>
+        Die 4: <input id="dieFour" type="text" value="" size="5" disabled><br>
+        Die 5: <input id="dieFive" type="text" value="" size="5" disabled><br>
+    </body>
+</html>

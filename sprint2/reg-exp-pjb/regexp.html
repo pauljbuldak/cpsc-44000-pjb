@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <!--
+        Author: Paul Buldak
+        Class: Software Engineering
+        Project: Lab 2 / RegExp Tester
+        Description: This application tests regular expressions
+    -->
+    <head>
+        <title>RegExp Tester</title>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width,
+        initialscale=1'>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" 
+        rel="stylesheet">
+        <style>
+            * { font-family: "Comfortaa", cursive; }
+        </style>
+        <script>
+            function checkRegExp() {
+                var str = document.getElementById("userInput").value;
+                var regExp = RegExp(document.getElementById("regExp").value);
+                document.getElementById("output").value = regExp.test(str);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>RegExp Tester</h1>
+        <h3>String: <input id="userInput" type="text" value="" size="10"></h3> <br>
+        <h3>Regular Expression: <input id="regExp" type="text" value="" size="10"></h3> <br>
+        <h3>Output: <output id="output"></output> </h3><br>
+        <button id="checkBtn" type="button" onclick="checkRegExp()">Check Regular Expression</button>
+    </body>
+</html>

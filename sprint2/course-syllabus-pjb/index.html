@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <!--
+        Author: Paul Buldak
+        Class: Software Engineering
+        Project: Lab 2 / Course Syllabus
+        Description: Recreating the course syllabus in HTML and CSS
+    -->
+    <head>
+        <title>CPSC-44000 Course Syllabus</title>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width,
+        initialscale=1'>
+        <style>
+            * {
+                background-color: white;
+                font-family: 'Times New Roman', Times, serif;
+                margin: 30px;
+                font-size: 18px;
+            }
+            .container {
+                padding: 10px;
+                column-count: 2;
+                position: relative;
+                display: inline;
+            }
+            .column-left {
+                width: 50%;
+                text-align: center;
+                display: inline-block;
+                justify-content: center;
+                align-items: center;
+            }
+            .column-right {
+                text-align: center;
+                display:inline-block;
+                justify-content: center;
+                align-items: center;
+            }
+            ol {
+                list-style-type: upper-roman;
+                padding-left: 80px;
+            }
+            li {
+                padding-left: 40px;
+                padding-right: 40px;
+                padding-top: 20px;
+            }
+            img {
+                height: 130px;
+                width: auto;
+            }
+            .numberlist {
+                padding-left: 6px;
+            }
+            .numbers {
+                list-style-type: decimal;
+                padding:0px;
+                font-size: 16px;
+                margin: 0px;
+            }
+            th, td {
+                padding-top: 4px;
+                padding-bottom: 4px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="column-left">
+                <img src="images/lewis.png" alt="Lewis Univeristy Logo">
+            </div>
+            <div class="column-right">
+                <pre>
+                    <strong>Software Engineering - 44000</strong> 
+                    <strong>Syllabus</strong>
+                    Fall Semester 2020
+                </pre>
+            </div>
+        </div>
+
+
+        <ol>
+            <li>
+                <table>
+                    <tr>
+                        <th colspan="2">
+                            Instructor Information
+                        </th> 
+                    </tr>
+                    <tr>
+                        <th><i>Instructor's name:</i></th> 
+                        <td>Eric Pogue</td>
+                    </tr>
+                    <tr>
+                        <th><i>Lewis office location:</i></th>
+                        <td>AS-132-A</td>
+                    </tr>
+                    <tr>
+                        <th><i>Office hours:</i></th>
+                        <td>MWF 1-2pm CT by appointment</td>
+                    </tr>
+                    <tr>
+                        <th><i>Appointments:</i></th>
+                        <td>Appointments can be requested via email</td>
+                    </tr>
+                    <tr>
+                        <th><i>Lewis Phone Number:</i></th>
+                        <td>563-209-7280 (mobile)</td>
+                    </tr>
+                    <tr>
+                        <th><i>Lewis email address:</i></th>
+                        <td><a href="mailto:epogue@lewisu.edu" target="_top">epogue@lewisu.edu</a></td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table>
+                    <tr>
+                        <th colspan="2">Course Information</th>
+                    </tr>
+                    <tr>
+                        <th>Course:</th>
+                        <td>Software Engineering (CPSC-44000-LT1)</td>
+                    </tr>
+                    <tr>
+                        <th>Course Credit Hours:</th>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Course description:</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            Methods, strategies, and tools for implementing software systems, particularly as part of a 
+                            development team. Topics will include the software development life cycle, Unified Modeling 
+                            Language, software testing techniques, software security, open-source development, requirements
+                            gathering and documentation, maintenance, and basic software project management.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Prerequistites: CPSC-24500 Objected-Oriented Programming</td>
+                    </tr>
+                    <tr>
+                        <th>Course meeting times:</th>
+                        <td>MWF 12-12:50am CT from August 31 through December 12th</td>
+                    </tr>
+                    <tr>
+                        <th>Meeting location:</th>
+                        <td>AS 104A</td>
+                    </tr>
+                    <tr>
+                        <th>Course final:</th>
+                        <td>Monday, December 14th form 1:30 to 3:30pm CT</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Student Learning Outcomes:</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <ol class="numberslist">
+                                <li class="numbers">compare and contrast various software process models</li>
+                                <li class="numbers">be able to elicit and analyze requirements of a proposed application</li>
+                                <li class="numbers">write clear and complete requirements documents</li>
+                                <li class="numbers">identify the events to which the software must respond and document them as a set of use cases</li>
+                                <li class="numbers">identify security issues in a software projects requirements and design</li>
+                                <li class="numbers">use techniques to produce self-documenting code</li>
+                                <li class="numbers">use coding strategy to produce secure code</li>
+                                <li class="numbers">draw diagrams to model workflows</li>
+                                <li class="numbers">develop and use diagrams to model classes and the interaction of classes</li>
+                                <li class="numbers">understand and practice unit testing and functional testing</li>
+                                <li class="numbers">understand the techniques used to test non-functinal requirements such as perfomance and security</li>
+                            </ol>
+                        </td>
+                    </tr>
+                </table>
+            </li>
+        </ol>
+        
+        
+    </body>
+</html>
